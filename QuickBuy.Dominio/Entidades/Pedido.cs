@@ -1,4 +1,4 @@
-﻿using QuickBuy.Dominio.ObjetoDeValor;
+﻿ using QuickBuy.Dominio.ObjetoDeValor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +34,8 @@ namespace QuickBuy.Dominio.Entidades
                 AdicionarMensagem("Pedido não pode ficar sem item do pedido");
             if (string.IsNullOrEmpty(CEP))
                 AdicionarMensagem("CEP deve estar preenchido");
+            if (FormaPagamentoId == 0)
+                AdicionarMensagem("Não foi definido a forma de pagamento");
 
 
 

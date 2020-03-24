@@ -8,7 +8,14 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            LimparMensagensValidacao();
+
+            if (ProdutoId == 0)
+                AdicionarMensagem("Não foi definido a referência");
+            if (Quantidade == 0)
+                AdicionarMensagem("Quantidade não definido");
+
+
         }
     }
 }
