@@ -39,6 +39,7 @@ namespace QuickBuy.Web
                                                                                         m =>m.MigrationsAssembly("QuickBuy.Repositorio")));
 
             services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 
 
